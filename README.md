@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/banner.png" alt="SEÑALES — El Umbral del Barrio" width="100%">
+<img src="docs/banner/banner.png" alt="SEÑALES — El Umbral del Barrio" width="100%">
 
 **Un Action-RPG narrativo sobre escuchar a la gente que está sola.**
 
