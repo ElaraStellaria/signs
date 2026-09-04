@@ -1,0 +1,72 @@
+# ═══════════════════════════════════════════════════════
+#  SEÑALES — El Umbral del Barrio
+#  .gitignore para Godot 4
+#
+#  Copiar este archivo a la RAÍZ del proyecto, junto a
+#  project.godot, con el nombre exacto: .gitignore
+# ═══════════════════════════════════════════════════════
+
+# ── Godot 4 ────────────────────────────────────────────
+# Caché e importación. NUNCA va al repo: se regenera sola
+# y causa conflictos binarios entre dispositivos.
+.godot/
+
+# Builds exportados
+/build/
+/builds/
+/export/
+*.apk
+*.aab
+*.exe
+*.pck
+*.zip
+
+# Configuración de exportación (puede contener rutas y claves)
+export_credentials.cfg
+export_presets.cfg
+
+# Keystores de Android — NUNCA subir.
+# Guardalos aparte: sin el keystore no podés actualizar
+# una app ya publicada.
+*.keystore
+*.jks
+
+# Traducciones compiladas
+*.translation
+
+# ── Sistema operativo ──────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editores ───────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── Aseprite ───────────────────────────────────────────
+# Los .aseprite SÍ van al repo (son las fuentes del arte).
+# Solo se ignoran los backups automáticos.
+*.aseprite-bak
+
+# ── Temporales propios ─────────────────────────────────
+/tmp/
+/notas_privadas/
+
+
+# ═══════════════════════════════════════════════════════
+#  RECORDATORIO — esto SÍ va al repo:
+#
+#  project.godot     configuración del proyecto
+#  *.tscn  *.tres    escenas y recursos (texto plano)
+#  *.gd              scripts
+#  *.import          metadata de importación (¡SÍ va!)
+#  *.png  *.ogg      assets
+#  *.aseprite        fuentes editables del pixel art
+#  addons/           plugins (Dialogue Manager, etc.)
+#  docs/             documentación del proyecto
+#
+#  Confusión típica: .godot/ NO va, pero *.import SÍ.
+#  Uno es caché regenerable, el otro es metadata necesaria.
+# ═══════════════════════════════════════════════════════
